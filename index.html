@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Porfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=DM+Serif+Display&family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -17,16 +23,16 @@
         </div>
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Porfolio</a>
+            <a href="#portfolio" class="nav-link">Porfolio</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#service" class="nav-link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -35,22 +41,224 @@
     <section class="hero">
       <div class="hero-clipped">
         <div class="hero-textbox">
-          <h1 class="main-heading">My Porfolio</h1>
-          <h2 class="sub-heading">Lorem ipsum dolor sit amet consectetur.</h2>
-          <a href="#" class="cta-btn">Lorem, ipsum.</a>
+          <h1 class="main-heading">Welcome</h1>
+          <h2 class="sub-heading">One life... one chance</h2>
+          <a href="#about" class="cta-btn">Check out </a>
         </div>
       </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script>
-      const mainNav = document.querySelector(".main-nav");
-      const hamburgerMenu = document.querySelector(".hamburger-menu");
+    <section class="about" id="about">
+      <div class="container">
+        <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+          <img src="img/profile.jpeg" alt="" />
+        </div>
+        <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+          <div class="about-heading">
+            <h1>About</h1>
+            <h6>Myself</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+            quam quia ea fuga magnam, sed beatae architecto sapiente. Natus,
+            vero?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <div class="social-media">
+            <ul class="nav-media-list">
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-github-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-instagram-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      hamburgerMenu.addEventListener("click", () => {
-        mainNav.classList.toggle("open");
-      });
-      gsap.fromTo(".hero-clipped", { scaleX: 0 }, { duration: 1.9, scaleX: 1 });
-    </script>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Services</h1>
+          <h6>What I can do for yous</h6>
+        </div>
+        <div class="my-skills">
+          <div class="skill" data-aos="fade-in" data-aos-delay="300">
+            <div class="icon-container">
+              <i class="fas fa-drafting-compass"></i>
+            </div>
+            <h1>Web Designer</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+              quam quia ea fuga magnam, sed beatae architecto sapiente.
+            </p>
+          </div>
+          <div class="skill" data-aos="fade-in" data-aos-delay="600">
+            <div class="icon-container">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h1>Web developer</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+              quam quia ea fuga magnam, sed beatae architecto sapiente.
+            </p>
+          </div>
+          <div class="skill" data-aos="fade-in" data-aos-delay="900">
+            <div class="icon-container">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h1>Java Developer</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+              quam quia ea fuga magnam, sed beatae architecto sapiente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Porfolio</h1>
+          <h6>View some of my recent work</h6>
+        </div>
+        <div class="porfolio-item">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <img src="img/portitem1.jpeg" alt="" />
+          </div>
+          <div
+            class="potfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
+            <h6>Web Developement</h6>
+            <h1>Blog Website</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, deserunt molestiae veritatis omnis praesentium nobis
+              quam est odio illum magni.
+            </p>
+            <a href="" class="cta">View Details</a>
+          </div>
+        </div>
+        <div class="porfolio-item">
+          <div
+            class="potfolio-description has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="900"
+          >
+            <h6>Web Developement</h6>
+            <h1>Blog Website</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, deserunt molestiae veritatis omnis praesentium nobis
+              quam est odio illum magni.
+            </p>
+            <a href="" class="cta">View Details</a>
+          </div>
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-left"
+            data-aos-delay="1200"
+          >
+            <img src="img/portitem1.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="porfolio-item">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="1500"
+          >
+            <img src="img/portitem1.jpeg" alt="" />
+          </div>
+          <div
+            class="potfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="1800"
+          >
+            <h6>Web Developement</h6>
+            <h1>Blog Website</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, deserunt molestiae veritatis omnis praesentium nobis
+              quam est odio illum magni.
+            </p>
+            <a href="" class="cta">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Contact</h1>
+          <h6>Let's work together</h6>
+        </div>
+        <form action="">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <label for="service">Services:</label>
+          <select name="service" id="service">
+            <option value="Web Design">Web Design</option>
+            <option value="Web Design">App</option>
+            <option value="Web Design">Other</option>
+          </select>
+          <label for="subject">Subject:</label>
+          <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <footer class="copyright">
+      <div class="up" id="up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <p>&copy; 2020 Joshua Pita</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ecd94919e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="main.js"></script>
   </body>
 </html>
